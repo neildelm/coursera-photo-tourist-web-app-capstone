@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.1.1'
 gem 'rack-cors', '~> 0.4', '>=0.4.0', :require => 'rack/cors'
 gem 'pry-rails', '~> 0.3', '>=0.3.4'
+gem 'bson', '~> 4.2', '>= 4.2.1'
 
 gem 'jbuilder', '~> 2.0', '>=2.6.0'
 
