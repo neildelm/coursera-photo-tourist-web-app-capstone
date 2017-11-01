@@ -528,3 +528,68 @@ Completed 200 OK in 206ms (Views: 174.1ms | ActiveRecord: 0.0ms)
   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test{i}"], ["created_at", "2017-11-01 19:02:19.001861"], ["updated_at", "2017-11-01 19:02:19.001861"]]
   [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2017-11-01 16:53:47 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (843.1ms)
+Completed 500 Internal Server Error in 894ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ERB::RAILS_API_URL):
+    4:     <meta charset="utf-8">
+    5:     <meta http-equiv="X-UA-Compatible" contents="IE=Edge,chrome=1">
+    6:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    7:     <%= stylesheet_link_tag    "spa-demo", :media => "all" %>
+    8:     <%= javascript_include_tag "spa-demo" %>
+    9:   </head>
+   10:   <body>
+  
+app/assets/javascripts/spa-demo/app.constant.js.erb:7:in `_evaluate_template'
+app/views/ui/index.html.erb:7:in `_app_views_ui_index_html_erb___31274321_46188144'
+Started GET "/" for 127.0.0.1 at 2017-11-01 16:55:04 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (158.4ms)
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ERB::RAILS_API_URL):
+    4:     <meta charset="utf-8">
+    5:     <meta http-equiv="X-UA-Compatible" contents="IE=Edge,chrome=1">
+    6:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    7:     <%= stylesheet_link_tag    "spa-demo", :media => "all" %>
+    8:     <%= javascript_include_tag "spa-demo" %>
+    9:   </head>
+   10:   <body>
+  
+app/assets/javascripts/spa-demo/app.constant.js.erb:7:in `_evaluate_template'
+app/views/ui/index.html.erb:7:in `_app_views_ui_index_html_erb___31274321_75662352'
+Started GET "/" for 127.0.0.1 at 2017-11-01 16:55:15 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (150.9ms)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ERB::RAILS_API_URL):
+    4:     <meta charset="utf-8">
+    5:     <meta http-equiv="X-UA-Compatible" contents="IE=Edge,chrome=1">
+    6:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    7:     <%= stylesheet_link_tag    "spa-demo", :media => "all" %>
+    8:     <%= javascript_include_tag "spa-demo" %>
+    9:   </head>
+   10:   <body>
+  
+app/assets/javascripts/spa-demo/app.constant.js.erb:7:in `_evaluate_template'
+app/views/ui/index.html.erb:7:in `_app_views_ui_index_html_erb___31274321_78674268'
+Started GET "/" for 127.0.0.1 at 2017-11-01 16:56:18 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1701.0ms)
+Completed 200 OK in 1750ms (Views: 1726.5ms | ActiveRecord: 0.0ms)
+
+
