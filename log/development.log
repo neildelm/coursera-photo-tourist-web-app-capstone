@@ -376,3 +376,155 @@ Processing by CitiesController#index as JSON
 Completed 200 OK in 111ms (Views: 52.3ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:01:11 -0400
+  [1m[35m (20.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (9460.2ms)
+Completed 200 OK in 9535ms (Views: 9510.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:13:01 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (2253.0ms)
+Completed 200 OK in 2330ms (Views: 2294.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/cities" for 127.0.0.1 at 2017-11-01 12:13:05 -0400
+Processing by CitiesController#index as JSON
+  Rendering cities/index.json.jbuilder
+  [1m[36mCity Load (18.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/_city.json.jbuilder (2.0ms)
+  Rendered cities/index.json.jbuilder (85.2ms)
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 44.6ms)
+
+
+  
+SyntaxError (C:/Courses/Coursera/capstone-demoapp/app/views/cities/_city.json.jbuilder:1: syntax error, unexpected <<, expecting keyword_end
+...=JbuilderTemplate.new(self); <<<<<<< HEAD
+...                               ^
+C:/Courses/Coursera/capstone-demoapp/app/views/cities/_city.json.jbuilder:3: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^
+C:/Courses/Coursera/capstone-demoapp/app/views/cities/_city.json.jbuilder:5: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> master
+  ^):
+  
+app/views/cities/_city.json.jbuilder:1: syntax error, unexpected <<, expecting keyword_end
+app/views/cities/_city.json.jbuilder:3: syntax error, unexpected ===, expecting keyword_end
+app/views/cities/_city.json.jbuilder:5: syntax error, unexpected >>, expecting keyword_end
+app/views/cities/index.json.jbuilder:1:in `_app_views_cities_index_json_jbuilder__568395036_91473516'
+Started GET "/api/cities" for 127.0.0.1 at 2017-11-01 12:14:33 -0400
+Processing by CitiesController#index as JSON
+  Rendering cities/index.json.jbuilder
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/_city.json.jbuilder (2.0ms)
+  Rendered cities/index.json.jbuilder (68.7ms)
+Completed 200 OK in 121ms (Views: 92.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/cities" for 127.0.0.1 at 2017-11-01 12:14:33 -0400
+Processing by CitiesController#index as JSON
+  Rendering cities/index.json.jbuilder
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/_city.json.jbuilder (1.5ms)
+  Rendered cities/index.json.jbuilder (16.5ms)
+Completed 200 OK in 74ms (Views: 46.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:14:38 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (157.9ms)
+Completed 200 OK in 202ms (Views: 178.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:18:57 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (167.4ms)
+Completed 200 OK in 213ms (Views: 189.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:21:04 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (871.8ms)
+Completed 200 OK in 929ms (Views: 902.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:27:22 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (995.1ms)
+Completed 200 OK in 1074ms (Views: 1044.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:28:16 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (299.8ms)
+Completed 200 OK in 348ms (Views: 321.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:29:11 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (956.0ms)
+Completed 200 OK in 1017ms (Views: 982.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:31:05 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (984.6ms)
+Completed 200 OK in 1061ms (Views: 1019.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:33:03 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (799.1ms)
+Completed 200 OK in 875ms (Views: 828.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:35:17 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (879.3ms)
+Completed 200 OK in 930ms (Views: 901.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:37:06 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (166.4ms)
+Completed 200 OK in 218ms (Views: 190.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:37:21 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (153.9ms)
+Completed 200 OK in 206ms (Views: 174.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (26.0ms)[0m  [1m[32mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test{i}"], ["created_at", "2017-11-01 19:02:18.857003"], ["updated_at", "2017-11-01 19:02:18.857003"]]
+  [1m[35m (26.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test{i}"], ["created_at", "2017-11-01 19:02:18.954872"], ["updated_at", "2017-11-01 19:02:18.954872"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test{i}"], ["created_at", "2017-11-01 19:02:18.968881"], ["updated_at", "2017-11-01 19:02:18.968881"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test{i}"], ["created_at", "2017-11-01 19:02:18.986791"], ["updated_at", "2017-11-01 19:02:18.986791"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test{i}"], ["created_at", "2017-11-01 19:02:19.001861"], ["updated_at", "2017-11-01 19:02:19.001861"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
