@@ -593,3 +593,1350 @@ Processing by UiController#index as HTML
 Completed 200 OK in 1750ms (Views: 1726.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:15:39 -0400
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1830.7ms)
+Completed 200 OK in 1890ms (Views: 1863.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:20:04 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (741.5ms)
+Completed 200 OK in 797ms (Views: 765.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:26:40 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (873.0ms)
+Completed 200 OK in 928ms (Views: 897.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:27:40 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (876.6ms)
+Completed 200 OK in 925ms (Views: 900.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:28:05 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (750.4ms)
+Completed 200 OK in 805ms (Views: 774.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:29:10 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (282.8ms)
+Completed 200 OK in 368ms (Views: 329.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:32:21 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (774.1ms)
+Completed 200 OK in 827ms (Views: 797.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 13:33:44 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (17.7ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (6.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (0.0ms)
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (6.5ms)
+  Rendered foos/_foo.json.jbuilder (0.0ms)
+  Rendered foos/index.json.jbuilder (285.2ms)
+Completed 200 OK in 365ms (Views: 257.0ms | ActiveRecord: 50.9ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 13:33:44 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (0.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (0.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/index.json.jbuilder (121.3ms)
+Completed 200 OK in 186ms (Views: 148.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:33:54 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (238.7ms)
+Completed 200 OK in 294ms (Views: 264.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:37:34 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (826.4ms)
+Completed 200 OK in 890ms (Views: 854.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:39:45 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (815.6ms)
+Completed 200 OK in 877ms (Views: 845.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:43:56 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (807.4ms)
+Completed 200 OK in 860ms (Views: 829.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:44:21 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (816.3ms)
+Completed 200 OK in 869ms (Views: 842.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:47:12 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (873.4ms)
+Completed 200 OK in 945ms (Views: 907.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-11-02 13:47:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:49:17 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (848.7ms)
+Completed 200 OK in 901ms (Views: 874.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 13:52:03 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (869.1ms)
+Completed 200 OK in 922ms (Views: 895.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:02:00 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1192.8ms)
+Completed 200 OK in 1251ms (Views: 1220.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:13:55 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (880.4ms)
+Completed 200 OK in 945ms (Views: 911.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:15:48 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1083.9ms)
+Completed 200 OK in 1141ms (Views: 1108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:18:38 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (830.3ms)
+Completed 200 OK in 889ms (Views: 856.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:19:53 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (253.2ms)
+Completed 200 OK in 314ms (Views: 285.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:20:25 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (247.7ms)
+Completed 200 OK in 302ms (Views: 271.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:21:12 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (805.1ms)
+Completed 200 OK in 860ms (Views: 830.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:25:31 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (901.4ms)
+Completed 200 OK in 956ms (Views: 926.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:26:40 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (994.2ms)
+Completed 200 OK in 1122ms (Views: 1091.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:27:46 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (773.8ms)
+Completed 200 OK in 826ms (Views: 796.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:30:38 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (974.0ms)
+Completed 200 OK in 1034ms (Views: 999.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:31:18 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1014.7ms)
+Completed 200 OK in 1071ms (Views: 1041.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 14:34:22 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1127.6ms)
+Completed 200 OK in 1181ms (Views: 1153.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:32:06 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (949.9ms)
+Completed 200 OK in 1013ms (Views: 980.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:37:27 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (787.5ms)
+Completed 200 OK in 845ms (Views: 812.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:43:19 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (689.8ms)
+Completed 200 OK in 743ms (Views: 715.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:43:48 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (711.5ms)
+Completed 200 OK in 761ms (Views: 734.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:44:22 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (151.4ms)
+Completed 200 OK in 205ms (Views: 177.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:46:40 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (740.6ms)
+Completed 200 OK in 798ms (Views: 766.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 15:46:48 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (164.0ms)
+Completed 200 OK in 221ms (Views: 195.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:06:30 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1112.3ms)
+Completed 200 OK in 1172ms (Views: 1141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:06:54 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (182.0ms)
+Completed 200 OK in 230ms (Views: 204.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:09:13 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (931.8ms)
+Completed 200 OK in 989ms (Views: 956.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:26:33 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (819.4ms)
+Completed 200 OK in 869ms (Views: 844.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:27:16 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (720.9ms)
+Completed 200 OK in 785ms (Views: 747.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:29:05 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (712.1ms)
+Completed 200 OK in 763ms (Views: 737.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:29:40 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (659.7ms)
+Completed 200 OK in 716ms (Views: 690.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:30:42 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (717.0ms)
+Completed 200 OK in 773ms (Views: 744.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:50:28 -0400
+  [1m[35m (15.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1973.6ms)
+Completed 200 OK in 2051ms (Views: 2025.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 16:53:34 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (719.1ms)
+Completed 200 OK in 770ms (Views: 740.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:02:43 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (150.1ms)
+Completed 200 OK in 211ms (Views: 176.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:02:49 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (145.6ms)
+Completed 200 OK in 199ms (Views: 169.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:03:31 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (698.0ms)
+Completed 200 OK in 747ms (Views: 723.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:03:35 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (149.5ms)
+Completed 200 OK in 200ms (Views: 177.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:05:36 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (731.5ms)
+Completed 200 OK in 787ms (Views: 759.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:09:57 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1335.7ms)
+Completed 200 OK in 1403ms (Views: 1374.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:10:25 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (161.5ms)
+Completed 200 OK in 221ms (Views: 196.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:12:26 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (822.8ms)
+Completed 200 OK in 869ms (Views: 846.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:13:41 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (169.4ms)
+Completed 200 OK in 222ms (Views: 192.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:14:07 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (207.6ms)
+Completed 200 OK in 295ms (Views: 243.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:17:19 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (738.6ms)
+Completed 200 OK in 789ms (Views: 761.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:18:21 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1341.0ms)
+Completed 200 OK in 1397ms (Views: 1373.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:19:02 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (165.4ms)
+Completed 200 OK in 215ms (Views: 192.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:20:30 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (754.0ms)
+Completed 200 OK in 802ms (Views: 779.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:21:29 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (796.1ms)
+Completed 200 OK in 846ms (Views: 821.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:25:17 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (834.9ms)
+Completed 200 OK in 892ms (Views: 860.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:25:53 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (729.1ms)
+Completed 200 OK in 783ms (Views: 756.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:26:54 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (854.7ms)
+Completed 200 OK in 907ms (Views: 881.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:27:04 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (771.4ms)
+Completed 200 OK in 825ms (Views: 798.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:27:33 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (707.5ms)
+Completed 200 OK in 758ms (Views: 731.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:27:53 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (718.0ms)
+Completed 200 OK in 778ms (Views: 747.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:28:22 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (721.8ms)
+Completed 200 OK in 773ms (Views: 749.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:28:48 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (709.6ms)
+Completed 200 OK in 761ms (Views: 736.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:29:56 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (750.7ms)
+Completed 200 OK in 806ms (Views: 772.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:34:10 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (734.7ms)
+Completed 200 OK in 792ms (Views: 766.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:34:15 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (179.0ms)
+Completed 200 OK in 234ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:34:18 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (171.5ms)
+Completed 200 OK in 242ms (Views: 201.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:34:39 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (691.4ms)
+Completed 200 OK in 748ms (Views: 715.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:35:49 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (759.9ms)
+Completed 200 OK in 817ms (Views: 793.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:36:39 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (699.5ms)
+Completed 200 OK in 749ms (Views: 722.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:37:52 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (676.9ms)
+Completed 200 OK in 744ms (Views: 707.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spa-demo/foos/foostest.html" for 127.0.0.1 at 2017-11-02 17:37:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/spa-demo/foos/foostest.html"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-02 17:38:18 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (669.6ms)
+Completed 200 OK in 723ms (Views: 693.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 18:43:47 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1578.2ms)
+Completed 200 OK in 1660ms (Views: 1617.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 18:44:40 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (992.6ms)
+Completed 200 OK in 1055ms (Views: 1026.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 18:44:42 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (18.6ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (5.0ms)
+  Rendered foos/_foo.json.jbuilder (0.0ms)
+  Rendered foos/_foo.json.jbuilder (0.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (4.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/index.json.jbuilder (334.4ms)
+Completed 200 OK in 496ms (Views: 311.6ms | ActiveRecord: 57.7ms)
+
+
+Started DELETE "/api/foos/6" for 127.0.0.1 at 2017-11-02 18:45:12 -0400
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[31mDELETE FROM "foos" WHERE "foos"."id" = $1[0m  [["id", 6]]
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 386ms (ActiveRecord: 22.0ms)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<FoosController:0xfd8dfb0>):
+  
+app/controllers/foos_controller.rb:60:in `destroy'
+Started DELETE "/api/foos/6" for 127.0.0.1 at 2017-11-02 18:45:16 -0400
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mFoo Load (2.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 404 Not Found in 115ms (ActiveRecord: 62.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Foo with 'id'=6):
+  
+app/controllers/foos_controller.rb:69:in `set_foo'
+Started DELETE "/api/foos/8" for 127.0.0.1 at 2017-11-02 18:45:26 -0400
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "foos" WHERE "foos"."id" = $1[0m  [["id", 8]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 9.1ms)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<FoosController:0xfadc3a0>):
+  
+app/controllers/foos_controller.rb:60:in `destroy'
+Started DELETE "/api/foos/1" for 127.0.0.1 at 2017-11-02 18:45:30 -0400
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "foos" WHERE "foos"."id" = $1[0m  [["id", 1]]
+  [1m[35m (25.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 27.1ms)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<FoosController:0xfb910a8>):
+  
+app/controllers/foos_controller.rb:60:in `destroy'
+Started DELETE "/api/foos/1" for 127.0.0.1 at 2017-11-02 18:45:33 -0400
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mFoo Load (0.5ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Foo with 'id'=1):
+  
+app/controllers/foos_controller.rb:69:in `set_foo'
+Started GET "/" for 127.0.0.1 at 2017-11-02 18:45:36 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (183.0ms)
+Completed 200 OK in 244ms (Views: 207.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 18:45:38 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (0.5ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (0.0ms)
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/index.json.jbuilder (89.3ms)
+Completed 200 OK in 154ms (Views: 116.8ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/foos/2" for 127.0.0.1 at 2017-11-02 18:46:00 -0400
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>2, "name"=>"test2", "created_at"=>"2017-10-26T12:22:08.593Z", "updated_at"=>"2017-10-26T12:22:08.593Z", "url"=>"http://localhost:3000/api/foos/2"}, "id"=>"2"}
+  [1m[36mFoo Load (0.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<FoosController:0x9673170>):
+  
+app/controllers/foos_controller.rb:45:in `update'
+Started PUT "/api/foos/2" for 127.0.0.1 at 2017-11-02 18:46:07 -0400
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>2, "name"=>"test1", "created_at"=>"2017-10-26T12:22:08.593Z", "updated_at"=>"2017-10-26T12:22:08.593Z", "url"=>"http://localhost:3000/api/foos/2"}, "id"=>"2"}
+  [1m[36mFoo Load (0.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<FoosController:0xafb08d0>):
+  
+app/controllers/foos_controller.rb:45:in `update'
+Started GET "/" for 127.0.0.1 at 2017-11-02 18:46:16 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (161.4ms)
+Completed 200 OK in 220ms (Views: 191.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 18:46:17 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (6.0ms)
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/index.json.jbuilder (83.7ms)
+Completed 200 OK in 165ms (Views: 121.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 18:46:53 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (970.7ms)
+Completed 200 OK in 1033ms (Views: 999.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 18:46:55 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/index.json.jbuilder (82.7ms)
+Completed 200 OK in 157ms (Views: 117.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 18:47:37 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (994.2ms)
+Completed 200 OK in 1059ms (Views: 1029.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 18:47:39 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (5.0ms)
+  Rendered foos/_foo.json.jbuilder (3.0ms)
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/index.json.jbuilder (105.8ms)
+Completed 200 OK in 174ms (Views: 132.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/foos" for 127.0.0.1 at 2017-11-02 18:47:48 -0400
+Processing by FoosController#create as JSON
+  Parameters: {"foo"=>{"name"=>"test1"}}
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<FoosController:0x43d1900>):
+  
+app/controllers/foos_controller.rb:31:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-02 18:59:54 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (324.6ms)
+Completed 200 OK in 393ms (Views: 351.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 18:59:56 -0400
+Processing by FoosController#index as JSON
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 11.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "application_records" does not exist
+LINE 8:                WHERE a.attrelid = '"application_records"'::r...
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"application_records"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  
+app/controllers/foos_controller.rb:7:in `index'
+Started GET "/" for 127.0.0.1 at 2017-11-02 19:01:00 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (213.1ms)
+Completed 200 OK in 293ms (Views: 254.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 19:01:02 -0400
+Processing by FoosController#index as JSON
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 3.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "application_records" does not exist
+LINE 8:                WHERE a.attrelid = '"application_records"'::r...
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"application_records"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  
+app/controllers/foos_controller.rb:7:in `index'
+Started GET "/" for 127.0.0.1 at 2017-11-02 19:01:09 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (470.8ms)
+Completed 200 OK in 606ms (Views: 528.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 19:01:10 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (4.1ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/index.json.jbuilder (107.8ms)
+Completed 200 OK in 180ms (Views: 126.5ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 19:02:18 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (167.1ms)
+Completed 200 OK in 217ms (Views: 189.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 19:02:19 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (3.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/index.json.jbuilder (106.3ms)
+Completed 200 OK in 190ms (Views: 137.7ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/api/foos/2" for 127.0.0.1 at 2017-11-02 19:02:27 -0400
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>2, "name"=>"test2", "created_at"=>"2017-10-26T12:22:08.593Z", "updated_at"=>"2017-10-26T12:22:08.593Z", "url"=>"http://localhost:3000/api/foos/2"}, "id"=>"2"}
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at, :updated_at, :url
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering foos/show.json.jbuilder
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/show.json.jbuilder (14.5ms)
+Completed 200 OK in 83ms (Views: 51.0ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/api/foos/2" for 127.0.0.1 at 2017-11-02 19:02:35 -0400
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>2, "name"=>"test1", "created_at"=>"2017-10-26T12:22:08.593Z", "updated_at"=>"2017-10-26T12:22:08.593Z", "url"=>"http://localhost:3000/api/foos/2"}, "id"=>"2"}
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at, :updated_at, :url
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "foos" SET "name" = $1, "updated_at" = $2 WHERE "foos"."id" = $3[0m  [["name", "test1"], ["updated_at", "2017-11-02 23:02:35.697505"], ["id", 2]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering foos/show.json.jbuilder
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/show.json.jbuilder (21.6ms)
+Completed 200 OK in 93ms (Views: 64.3ms | ActiveRecord: 7.0ms)
+
+
+Started PUT "/api/foos/2" for 127.0.0.1 at 2017-11-02 19:02:41 -0400
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>2, "created_at"=>"2017-10-26T12:22:08.593Z", "updated_at"=>"2017-11-02T23:02:35.697Z", "url"=>"http://localhost:3000/api/foos/2"}, "id"=>"2"}
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at, :updated_at, :url
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering foos/show.json.jbuilder
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/show.json.jbuilder (18.0ms)
+Completed 200 OK in 83ms (Views: 62.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 19:02:46 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (183.8ms)
+Completed 200 OK in 235ms (Views: 208.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 19:02:47 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (0.5ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (5.5ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/index.json.jbuilder (82.7ms)
+Completed 200 OK in 157ms (Views: 119.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/foos" for 127.0.0.1 at 2017-11-02 19:02:57 -0400
+Processing by FoosController#create as JSON
+  Parameters: {"foo"=>{"name"=>"Test1"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.0ms)[0m  [1m[32mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test1"], ["created_at", "2017-11-02 23:02:57.414046"], ["updated_at", "2017-11-02 23:02:57.414046"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering foos/show.json.jbuilder
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/show.json.jbuilder (20.1ms)
+Completed 201 Created in 74ms (Views: 48.9ms | ActiveRecord: 10.1ms)
+
+
+Started DELETE "/api/foos/5" for 127.0.0.1 at 2017-11-02 19:03:05 -0400
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mFoo Load (0.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "foos" WHERE "foos"."id" = $1[0m  [["id", 5]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 28ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 19:03:05 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/index.json.jbuilder (72.2ms)
+Completed 200 OK in 119ms (Views: 95.5ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/api/foos/2" for 127.0.0.1 at 2017-11-02 19:03:14 -0400
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>2, "name"=>"test12", "created_at"=>"2017-10-26T12:22:08.593Z", "updated_at"=>"2017-11-02T23:02:35.697Z", "url"=>"http://localhost:3000/api/foos/2"}, "id"=>"2"}
+  [1m[36mFoo Load (0.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at, :updated_at, :url
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "foos" SET "name" = $1, "updated_at" = $2 WHERE "foos"."id" = $3[0m  [["name", "test12"], ["updated_at", "2017-11-02 23:03:14.588569"], ["id", 2]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering foos/show.json.jbuilder
+  Rendered foos/_foo.json.jbuilder (0.0ms)
+  Rendered foos/show.json.jbuilder (15.0ms)
+Completed 200 OK in 76ms (Views: 46.8ms | ActiveRecord: 7.1ms)
+
+
+Started PUT "/api/foos/2" for 127.0.0.1 at 2017-11-02 19:03:26 -0400
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>2, "name"=>"test12", "created_at"=>"2017-10-26T12:22:08.593Z", "updated_at"=>"2017-11-02T23:03:14.588Z", "url"=>"http://localhost:3000/api/foos/2"}, "id"=>"2"}
+  [1m[36mFoo Load (0.5ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at, :updated_at, :url
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering foos/show.json.jbuilder
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/show.json.jbuilder (16.0ms)
+Completed 200 OK in 69ms (Views: 52.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 19:03:29 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (191.5ms)
+Completed 200 OK in 251ms (Views: 221.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 19:03:30 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/index.json.jbuilder (98.3ms)
+Completed 200 OK in 159ms (Views: 127.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/foos/7" for 127.0.0.1 at 2017-11-02 19:04:27 -0400
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "foos" WHERE "foos"."id" = $1[0m  [["id", 7]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 16ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 19:04:27 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (0.0ms)
+  Rendered foos/_foo.json.jbuilder (0.5ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/index.json.jbuilder (67.7ms)
+Completed 200 OK in 121ms (Views: 91.8ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/foos/4" for 127.0.0.1 at 2017-11-02 19:04:31 -0400
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "foos" WHERE "foos"."id" = $1[0m  [["id", 4]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 15ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/api/foos" for 127.0.0.1 at 2017-11-02 19:04:32 -0400
+Processing by FoosController#index as JSON
+  Rendering foos/index.json.jbuilder
+  [1m[36mFoo Load (1.0ms)[0m  [1m[34mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (0.0ms)
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/index.json.jbuilder (54.2ms)
+Completed 200 OK in 104ms (Views: 75.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 19:10:31 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (670.1ms)
+Completed 200 OK in 718ms (Views: 694.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 19:12:54 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (688.3ms)
+Completed 200 OK in 739ms (Views: 715.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 19:14:08 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (854.5ms)
+Completed 200 OK in 902ms (Views: 877.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 19:14:34 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (670.0ms)
+Completed 200 OK in 719ms (Views: 695.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 20:15:17 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (997.8ms)
+Completed 200 OK in 1057ms (Views: 1029.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 20:16:15 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (879.7ms)
+Completed 200 OK in 932ms (Views: 909.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 20:23:15 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (818.1ms)
+Completed 200 OK in 873ms (Views: 847.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 20:23:39 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (726.7ms)
+Completed 200 OK in 774ms (Views: 752.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-02 20:24:38 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (715.2ms)
+Completed 200 OK in 766ms (Views: 737.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-03 11:30:47 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (1142.5ms)
+Completed 200 OK in 1201ms (Views: 1175.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/cities" for 127.0.0.1 at 2017-11-03 11:30:49 -0400
+Processing by CitiesController#index as JSON
+  Rendering cities/index.json.jbuilder
+  [1m[36mCity Load (26.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/_city.json.jbuilder (5.0ms)
+  Rendered cities/index.json.jbuilder (277.8ms)
+Completed 200 OK in 363ms (Views: 120.8ms | ActiveRecord: 188.0ms)
+
+
+Started POST "/api/cities" for 127.0.0.1 at 2017-11-03 11:31:24 -0400
+Processing by CitiesController#create as JSON
+  Parameters: {"city"=>{"name"=>"Tokyo"}}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (20.6ms)[0m  [1m[32mINSERT INTO "cities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tokyo"], ["created_at", "2017-11-03 15:31:24.270047"], ["updated_at", "2017-11-03 15:31:24.270047"]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 20.6ms)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "cities_pkey"
+DETAIL:  Key (id)=(1) already exists.
+: INSERT INTO "cities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"):
+  
+app/controllers/cities_controller.rb:31:in `block in create'
+app/controllers/cities_controller.rb:30:in `create'
+Started POST "/api/cities" for 127.0.0.1 at 2017-11-03 11:31:27 -0400
+Processing by CitiesController#create as JSON
+  Parameters: {"city"=>{"name"=>"Tokyo"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tokyo"], ["created_at", "2017-11-03 15:31:27.572084"], ["updated_at", "2017-11-03 15:31:27.572084"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering cities/show.json.jbuilder
+  Rendered cities/_city.json.jbuilder (1.5ms)
+  Rendered cities/show.json.jbuilder (13.0ms)
+Completed 201 Created in 79ms (Views: 47.9ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/api/cities" for 127.0.0.1 at 2017-11-03 11:31:39 -0400
+Processing by CitiesController#create as JSON
+  Parameters: {"city"=>{"name"=>"London"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "cities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "London"], ["created_at", "2017-11-03 15:31:39.394857"], ["updated_at", "2017-11-03 15:31:39.394857"]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering cities/show.json.jbuilder
+  Rendered cities/_city.json.jbuilder (1.0ms)
+  Rendered cities/show.json.jbuilder (15.5ms)
+Completed 201 Created in 69ms (Views: 52.6ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/api/cities" for 127.0.0.1 at 2017-11-03 11:31:47 -0400
+Processing by CitiesController#create as JSON
+  Parameters: {"city"=>{"name"=>"New York"}}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "New York"], ["created_at", "2017-11-03 15:31:47.942594"], ["updated_at", "2017-11-03 15:31:47.942594"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering cities/show.json.jbuilder
+  Rendered cities/_city.json.jbuilder (1.0ms)
+  Rendered cities/show.json.jbuilder (12.0ms)
+Completed 201 Created in 74ms (Views: 42.9ms | ActiveRecord: 5.5ms)
+
+
+Started PUT "/api/cities/4" for 127.0.0.1 at 2017-11-03 11:31:57 -0400
+Processing by CitiesController#update as JSON
+  Parameters: {"city"=>{"id"=>4, "name"=>"New York City", "created_at"=>"2017-11-03T15:31:47.942Z", "updated_at"=>"2017-11-03T15:31:47.942Z", "url"=>"http://localhost:3000/api/cities/4"}, "id"=>"4"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Unpermitted parameters: :created_at, :updated_at, :url
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "cities" SET "name" = $1, "updated_at" = $2 WHERE "cities"."id" = $3[0m  [["name", "New York City"], ["updated_at", "2017-11-03 15:31:57.287588"], ["id", 4]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering cities/show.json.jbuilder
+  Rendered cities/_city.json.jbuilder (2.0ms)
+  Rendered cities/show.json.jbuilder (18.0ms)
+Completed 200 OK in 90ms (Views: 49.1ms | ActiveRecord: 8.5ms)
+
+
+Started DELETE "/api/cities/2" for 127.0.0.1 at 2017-11-03 11:32:08 -0400
+Processing by CitiesController#destroy as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 2]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 18ms (ActiveRecord: 7.0ms)
+
+
+Started POST "/api/cities" for 127.0.0.1 at 2017-11-03 11:32:14 -0400
+Processing by CitiesController#create as JSON
+  Parameters: {"city"=>{"name"=>"Tokyo"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tokyo"], ["created_at", "2017-11-03 15:32:14.206869"], ["updated_at", "2017-11-03 15:32:14.206869"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering cities/show.json.jbuilder
+  Rendered cities/_city.json.jbuilder (1.0ms)
+  Rendered cities/show.json.jbuilder (10.5ms)
+Completed 201 Created in 60ms (Views: 40.7ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-03 14:18:45 -0400
+  [1m[35m (30.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (13960.5ms)
+Completed 200 OK in 14040ms (Views: 14009.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/cities" for 127.0.0.1 at 2017-11-03 14:19:05 -0400
+Processing by CitiesController#index as JSON
+  Rendering cities/index.json.jbuilder
+  [1m[36mCity Load (14.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/_city.json.jbuilder (2.0ms)
+  Rendered cities/_city.json.jbuilder (1.0ms)
+  Rendered cities/_city.json.jbuilder (0.0ms)
+  Rendered cities/_city.json.jbuilder (0.0ms)
+  Rendered cities/index.json.jbuilder (151.4ms)
+Completed 200 OK in 223ms (Views: 136.3ms | ActiveRecord: 45.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-03 14:22:20 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (543.9ms)
+Completed 200 OK in 709ms (Views: 640.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/cities" for 127.0.0.1 at 2017-11-03 14:22:23 -0400
+Processing by CitiesController#index as JSON
+  Rendering cities/index.json.jbuilder
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/_city.json.jbuilder (1.0ms)
+  Rendered cities/_city.json.jbuilder (2.0ms)
+  Rendered cities/_city.json.jbuilder (0.0ms)
+  Rendered cities/_city.json.jbuilder (1.0ms)
+  Rendered cities/index.json.jbuilder (46.9ms)
+Completed 200 OK in 104ms (Views: 74.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-03 14:24:02 -0400
+Processing by UiController#index as HTML
+  Rendering ui/index.html.erb
+  Rendered ui/index.html.erb (390.9ms)
+Completed 200 OK in 484ms (Views: 443.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/cities" for 127.0.0.1 at 2017-11-03 14:24:05 -0400
+Processing by CitiesController#index as JSON
+  Rendering cities/index.json.jbuilder
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/_city.json.jbuilder (1.0ms)
+  Rendered cities/_city.json.jbuilder (0.5ms)
+  Rendered cities/_city.json.jbuilder (0.5ms)
+  Rendered cities/_city.json.jbuilder (1.0ms)
+  Rendered cities/index.json.jbuilder (69.2ms)
+Completed 200 OK in 170ms (Views: 119.9ms | ActiveRecord: 0.0ms)
+
+
