@@ -25,12 +25,17 @@
             <li ui-sref-active="{'active': 'things'}">
                 <a ui-sref="things({id:null})">Things</a></li>
             <li ui-sref-active="active">
+                <a ui-sref="tags({id:null})">Categories</a></li>
+            <li ui-sref-active="active">
                 <a ui-sref="home">Subjects</a></li>
+            <li ui-sref-active="active">
+                <a ui-sref="findByTag">Find by category</a>
+            </li>
           </ul>
-          
+
         </li>
       </ul>
-      
+
       <span class="origin-control navbar-left">
         <sd-current-origin-selector></sd-current-origin-selector>
       </span>

@@ -6,7 +6,7 @@
     .config(RouterFunction);
 
   RouterFunction.$inject = ["$stateProvider",
-                            "$urlRouterProvider", 
+                            "$urlRouterProvider",
                             "spa-demo.config.APP_CONFIG"];
 
   function RouterFunction($stateProvider, $urlRouterProvider, APP_CONFIG) {
@@ -19,7 +19,7 @@
       url: "/signup",
       templateUrl: APP_CONFIG.signup_page_html
     })
-    .state("authn",{ 
+    .state("authn",{
       url: "/authn",
       templateUrl: APP_CONFIG.authn_page_html
     })
@@ -35,7 +35,15 @@
       url: "/foos",
       templateUrl: APP_CONFIG.main_page_html
     })
-    ; 
+    .state("tags", {
+      url: "/tags/:id",
+      templateUrl: APP_CONFIG.tags_page_html
+    })
+    .state("findByTag", {
+      url: "/find_by_cat",
+      templateUrl: APP_CONFIG.find_by_tag_html
+    })
+    ;
 
     //$urlRouterProvider.otherwise("/subjects");
   }
