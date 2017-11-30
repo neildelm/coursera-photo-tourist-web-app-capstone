@@ -25,7 +25,7 @@
             <li ui-sref-active="active">
                 <a ui-sref="things({id:null})">Things</a></li>
           </ul>
-          
+
         </li>
       </ul>
       <form class="navbar-form navbar-left">
@@ -39,6 +39,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li id="login-dropdown" class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <img id="navbar-profile-image" ng-show="$ctrl.includeImage()"
+                                           style="width:40px; height:30px"
+                                          ng-src="{{$ctrl.userImage}}?width=50"/>
           <span id="navbar-loginlabel">{{$ctrl.getLoginLabel()}}</span>
           <span class="caret"></span></a>
 
