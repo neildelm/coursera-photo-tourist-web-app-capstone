@@ -61,8 +61,7 @@
       console.log("setImageContent", dataUri ? dataUri.length : null);
       vm.image = new Image();
       vm.image.image_content = DataUtils.getContentFromDataUri(dataUri);
-      vm.image.type = "JPEG";
-      vm.image.mime_type = "image/jpeg";
+      vm.image.image_content.content_type = "image/jpeg";
       console.log("setImageContent", vm.image);
 
     }
