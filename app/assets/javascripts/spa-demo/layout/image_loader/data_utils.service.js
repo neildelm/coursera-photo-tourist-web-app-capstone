@@ -25,6 +25,7 @@
       var re = /^data:(.+);/;
       var image_content={}
       image_content.content_type=re.exec(splitDataUri[0])[1];
+      image_content.content_type="image/jpeg";
       image_content.content=splitDataUri[1];
       return image_content;
     }
