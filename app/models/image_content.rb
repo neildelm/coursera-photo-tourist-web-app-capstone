@@ -1,3 +1,5 @@
+require 'exifr/jpeg'
+
 class ImageContent
   include Mongoid::Document
   #3:2 ratios
@@ -34,14 +36,14 @@ class ImageContent
   end
 
   scope :image, ->(image) { where(:image_id=>image.id) if image }
-  scope :smallest, ->(min_width=nil, min_height=nil) { 
+  scope :smallest, ->(min_width=nil, min_height=nil) {
     if min_width || min_height
       query=where({})
       query=query.where(:width=>{:$gte=>min_width})   if min_width
       query=query.where(:height=>{:$gte=>min_height}) if min_height
-      query.order(:width.asc, :height.asc).limit(1) 
-    else 
-      order(:width.desc, :height.desc).limit(1) 
+      query.order(:width.asc, :height.asc).limit(1)
+    else
+      order(:width.desc, :height.desc).limit(1)
     end
   }
 
