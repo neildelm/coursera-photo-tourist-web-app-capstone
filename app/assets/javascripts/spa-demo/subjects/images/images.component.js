@@ -25,32 +25,107 @@
   imageSelectorTemplateUrl.$inject = ["spa-demo.config.APP_CONFIG"];
   function imageSelectorTemplateUrl(APP_CONFIG) {
     return APP_CONFIG.image_selector_html;
-  }    
+  }
   imageEditorTemplateUrl.$inject = ["spa-demo.config.APP_CONFIG"];
   function imageEditorTemplateUrl(APP_CONFIG) {
     return APP_CONFIG.image_editor_html;
-  }    
+  }
 
   ImageSelectorController.$inject = ["$scope",
                                      "$stateParams",
                                      "spa-demo.authz.Authz",
-                                     "spa-demo.subjects.Image"];
-  function ImageSelectorController($scope, $stateParams, Authz, Image) {
+                                     "spa-demo.subjects.Image",
+                                     "spa-demo.geoloc.currentOrigin"];
+  function ImageSelectorController($scope, $stateParams, Authz, Image, currentOrigin) {
     var vm=this;
+    vm.getOrigin = getOrigin;
+    vm.getOriginAddress = getOriginAddress;
+    vm.getDistance = getDistance;
+    vm.selectAll = selectAll;
+    vm.deselectAll = deselectAll;
+    vm.filter = filter;
+    vm.showAll = showAll;
 
     vm.$onInit = function() {
       console.log("ImageSelectorController",$scope);
-      $scope.$watch(function(){ return Authz.getAuthorizedUserId(); }, 
-                    function(){ 
-                      if (!$stateParams.id) { 
-                        vm.items = Image.query(); 
-                      }
-                    });
+      $scope.$watch(function(){ return Authz.getAuthorizedUserId(); },
+                    loadItems );
+      $scope.$watch(function(){ return currentOrigin.getLocation(); },
+                    loadItems );
+      $scope.$watch(function(){ return currentOrigin.getDistance(); },
+                    loadItems );
     }
     return;
     //////////////
-  }
 
+    function loadItems() {
+      var queryParams = {};
+      loadItemsWithParams(queryParams);
+    }
+
+    function loadItemsSelected(selectedImages) {
+      if(selectedImages.length==0) {
+        vm.items = [];
+      }
+      else {
+        var queryParams = {};
+        queryParams["include[]"] = selectedImages;
+        loadItemsWithParams(queryParams);
+      }
+    }
+
+    function loadItemsWithParams(queryParams) {
+      if (!$stateParams.id) {
+        if(getOrigin()) {
+          queryParams["lng"] = currentOrigin.getLongitude().toString();
+          queryParams["lat"] = currentOrigin.getLatitude().toString();
+          if(getDistance()) {
+            queryParams["miles"] = currentOrigin.getDistance().toString();
+          }
+        }
+        vm.items = Image.query(queryParams);
+      }
+    }
+
+    function getOrigin() {
+      return currentOrigin.getLocation();
+    }
+
+    function getOriginAddress() {
+      return currentOrigin.getFormattedAddress();
+    }
+
+    function getDistance() {
+      return currentOrigin.getDistance();
+    }
+
+    function selectAll() {
+      for (var i=0; vm.items && i<vm.items.length; i++) {
+        vm.items[i].selected = true;
+      }
+    }
+
+    function deselectAll() {
+      for (var i=0; vm.items && i<vm.items.length; i++) {
+        vm.items[i].selected = false;
+      }
+    }
+
+    function filter() {
+      var selectedImages = [];
+      for (var i=0; vm.items && i<vm.items.length; i++) {
+        if(vm.items[i].selected) {
+          selectedImages.push(vm.items[i].id);
+        }
+      }
+      loadItemsSelected(selectedImages);
+    }
+
+    function showAll() {
+      loadItems();
+    }
+
+  }
 
   ImageEditorController.$inject = ["$scope","$q",
                                    "$state", "$stateParams",
@@ -61,7 +136,7 @@
                                    "spa-demo.subjects.ImageLinkableThing",
                                    "spa-demo.geoloc.geocoder",
                                    ];
-  function ImageEditorController($scope, $q, $state, $stateParams, 
+  function ImageEditorController($scope, $q, $state, $stateParams,
                                  Authz, DataUtils, Image, ImageThing,ImageLinkableThing,
                                  geocoder) {
     var vm=this;
@@ -76,8 +151,8 @@
 
     vm.$onInit = function() {
       console.log("ImageEditorController",$scope);
-      $scope.$watch(function(){ return Authz.getAuthorizedUserId(); }, 
-                    function(){ 
+      $scope.$watch(function(){ return Authz.getAuthorizedUserId(); },
+                    function(){
                       if ($stateParams.id) {
                         reload($stateParams.id);
                       } else {
@@ -117,14 +192,14 @@
     }
 
     function setImageContent(dataUri) {
-      console.log("setImageContent", dataUri ? dataUri.length : null);      
+      console.log("setImageContent", dataUri ? dataUri.length : null);
       vm.item.image_content = DataUtils.getContentFromDataUri(dataUri);
-    }    
+    }
 
     function create() {
       vm.item.$save().then(
         function(){
-           $state.go(".", {id: vm.item.id}); 
+           $state.go(".", {id: vm.item.id});
         },
         handleError);
     }
@@ -147,21 +222,21 @@
       console.log("waiting for promises", promises);
       $q.all(promises).then(
         function(response){
-          console.log("promise.all response", response); 
+          console.log("promise.all response", response);
           $scope.imageform.$setPristine();
-          reload(); 
+          reload();
         },
-        handleError);    
+        handleError);
     }
 
     function remove() {
       vm.item.errors = null;
       vm.item.$delete().then(
-        function(){ 
-          console.log("remove complete", vm.item);          
+        function(){
+          console.log("remove complete", vm.item);
           clear();
         },
-        handleError);      
+        handleError);
     }
 
     function locationByAddress(address) {
@@ -177,14 +252,14 @@
     function handleError(response) {
       console.log("error", response);
       if (response.data) {
-        vm.item["errors"]=response.data.errors;          
-      } 
+        vm.item["errors"]=response.data.errors;
+      }
       if (!vm.item.errors) {
         vm.item["errors"]={}
-        vm.item["errors"]["full_messages"]=[response]; 
-      }      
+        vm.item["errors"]["full_messages"]=[response];
+      }
       $scope.imageform.$setPristine();
-    }    
+    }
   }
 
 })();
