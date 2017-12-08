@@ -1,0 +1,10 @@
+<ul class="items images">
+  <li ng-repeat="image in $ctrl.images"
+       ng-class="{selected: $ctrl.isCurrentImage($index)}">
+    <a ng-click="$ctrl.imageClicked($index)">
+      <img ng-src="{{image.image_content_url}}?width=100"/>
+      <span class="id image_id">{{image.image_id}}</span>
+      <span class="caption">{{image.image_caption}}</span>
+    </a>
+  </li>
+</ul>

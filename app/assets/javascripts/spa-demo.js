@@ -66,3 +66,5 @@
 //= require spa-demo/subjects/current_subjects/current_subjects.service
 //= require spa-demo/subjects/current_images/current_images.component
 //= require spa-demo/subjects/current_things/current_things.component
+//= require spa-demo/subjects/current_image_things/current_image_things.component
+//= require spa-demo/subjects/current_images_collapsed/current_images_collapsed.component

@@ -8,9 +8,10 @@
   CurrentSubjects.$inject = ["$rootScope","$q",
                              "$resource",
                              "spa-demo.geoloc.currentOrigin",
-                             "spa-demo.config.APP_CONFIG"];
+                             "spa-demo.config.APP_CONFIG",
+                             "spa-demo.subjects.ImageThing"];
 
-  function CurrentSubjects($rootScope, $q, $resource, currentOrigin, APP_CONFIG) {
+  function CurrentSubjects($rootScope, $q, $resource, currentOrigin, APP_CONFIG, ImageThing) {
     var subjectsResource = $resource(APP_CONFIG.server_url + "/api/subjects",{},{
       query: { cache:false, isArray:true }
     });
@@ -20,7 +21,9 @@
     service.imageIdx = null;
     service.things = [];
     service.thingIdx = null;
+    service.currentImageThings = [];
     service.refresh = refresh;
+    service.setCurrentImageThings = setCurrentImageThings;
     service.isCurrentImageIndex = isCurrentImageIndex;
     service.isCurrentThingIndex = isCurrentThingIndex;
     service.nextThing = nextThing;
@@ -30,7 +33,7 @@
     $rootScope.$watch(function(){ return currentOrigin.getVersion(); }, refresh);
     return;
     ////////////////
-    function refresh() {      
+    function refresh() {
       var params=currentOrigin.getPosition();
       if (!params || !params.lng || !params.lat) {
         params=angular.copy(APP_CONFIG.default_position);
@@ -45,12 +48,12 @@
       console.log("refresh",params);
 
       var p1=refreshImages(params);
-      params["subject"]="thing";      
+      params["subject"]="thing";
       var p2=refreshThings(params);
       $q.all([p1,p2]).then(
         function(){
           service.setCurrentImageForCurrentThing();
-        });      
+        });
     }
 
     function refreshImages(params) {
@@ -80,6 +83,32 @@
       return result.$promise;
     }
 
+    function setCurrentImageThings() {
+      var image = this.getCurrentImage();
+      service.currentImageThings = [];
+      if (image && image.id) {
+        ImageThing.query({image_id: image.image_id}).$promise
+          .then(function(thingImages) {
+            var images = {};
+            for (var i = 0; i < thingImages.length; i++) {
+              var thingImage = thingImages[i];
+              images[thingImage.thing_id] = thingImage.thing_description;
+            }
+            for (var j = 0; j < service.things.length; j++) {
+              var thing = service.things[j];
+              if (images.hasOwnProperty(thing.thing_id)) {
+                service.currentImageThings.push({
+                    thing_id: thing.thing_id,
+                    thing_name: thing.thing_name,
+                    thing_description: images[thing.thing_id],
+                    image_content_url: thing.image_content_url
+                });
+              }
+            }
+          });
+      }
+    }
+
     function isCurrentImageIndex(index) {
       //console.log("isCurrentImageIndex", index, service.imageIdx === index);
       return service.imageIdx === index;
@@ -93,7 +122,7 @@
         service.setCurrentThing(service.thingIdx + 1);
       } else if (service.things.length >= 1) {
         service.setCurrentThing(0);
-      }    
+      }
     }
     function previousThing() {
       if (service.thingIdx !== null) {
@@ -101,7 +130,7 @@
       } else if (service.things.length >= 1) {
         service.setCurrentThing(service.things.length-1);
       }
-    }    
+    }
   }
 
   CurrentSubjects.prototype.getVersion = function() {
@@ -122,7 +151,9 @@
   CurrentSubjects.prototype.getCurrentThing = function() {
     return this.things.length > 0 ? this.things[this.thingIdx] : null;
   }
-
+  CurrentSubjects.prototype.getCurrentImageThings = function() {
+    return this.currentImageThings;
+  }
 
   CurrentSubjects.prototype.setCurrentImage = function(index, skipThing) {
     if (index >= 0 && this.images.length > 0) {
@@ -136,6 +167,7 @@
     if (!skipThing) {
       this.setCurrentThingForCurrentImage();
     }
+    this.setCurrentImageThings();
 
     console.log("setCurrentImage", this.imageIdx, this.getCurrentImage());
     return this.getCurrentImage();
@@ -173,7 +205,7 @@
             break;
           }
         }
-      }      
+      }
     }
   }
 
@@ -199,13 +231,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-  })();
+})();

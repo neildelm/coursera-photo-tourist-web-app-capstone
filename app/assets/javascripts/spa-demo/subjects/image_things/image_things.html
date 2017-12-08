@@ -1,0 +1,19 @@
+<div class="areas-pane">
+    <div class="areas-left"
+         ng-class="$ctrl.hasThings()?'col-sm-6 col-md-5 col-lg-4':'col-sm-12'">
+      <div class="area-pane expanded">
+        <sd-tabs>
+          <sd-tab label="Images">
+              <current-images-collapsed></current-images-collapsed>
+          </sd-tab>
+        </sd-tabs>
+      </div>
+    </div>
+    <div class="areas-right"
+         ng-if="$ctrl.hasThings()"
+         ng-class="'col-sm-6 col-md-7 col-lg-8'">
+      <div class="area-pane expanded">
+        <current-image-things></current-image-things>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<sd-tabs>
+  <sd-tab ng-repeat="thing in $ctrl.things | orderBy:'thing_id'" label="Thing {{thing.thing_id}}">
+    <h3>{{thing.thing_name}}</h3>
+    <div class="description">{{thing.thing_description}}</div>
+    <img ng-src="{{thing.image_content_url}}?width=300"/>
+  </sd-tab>
+</sd-tabs>

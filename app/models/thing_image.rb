@@ -15,6 +15,7 @@ class ThingImage < ActiveRecord::Base
                          .select("thing_images.*","images.id as image_id")}
 
   scope :with_name,    ->{ with_thing.select("things.name as thing_name")}
+  scope :with_name_desc,->{ with_thing.select("things.name as thing_name, things.description as thing_description")}
   scope :with_caption, ->{ with_image.select("images.caption as image_caption")}
   scope :with_position,->{ with_image.select("images.lng, images.lat")}
   scope :within_range, ->(origin, limit=nil, reverse=nil) {
@@ -36,8 +37,8 @@ class ThingImage < ActiveRecord::Base
     m3=ThingImage.maximum(:updated_at)
     [m1,m2,m3].max
 =end
-    unions=[Thing,Image,ThingImage].map {|t| 
-              "select max(updated_at) as modified from #{t.table_name}\n" 
+    unions=[Thing,Image,ThingImage].map {|t|
+              "select max(updated_at) as modified from #{t.table_name}\n"
             }.join(" union\n")
     sql   ="select max(modified) as last_modified from (\n#{unions}) as x"
     value=connection.select_value(sql)
