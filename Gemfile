@@ -17,11 +17,11 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails', '~>4.2.1'
 gem 'jbuilder', '~> 2.6.0'
 
-gem 'bcrypt', '~> 3.1.11'
-
 group :development do
   gem 'spring', '~>2.0.0'
 end
+
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 group :development, :test do
   gem 'webrick', '~>1.3.1', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
